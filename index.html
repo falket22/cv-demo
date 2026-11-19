@@ -1,2 +1,255 @@
-# cv-demo
-test
+ <html lanf="fr">
+ <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> CV- Davyd Ivanov </title>
+    <style>
+        :root {
+    --primary: #1e3a5f;
+    --accent: #2b6cb0;
+    --text: #1f2937;
+    --muted: #4b5563;
+    --border: #e5e7eb;
+    --bg-light: #f8fafc;
+        }
+
+        .cv {
+        max-width: 860px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+        }
+        .sidebar {
+    background: var(--bg-light);
+    border-right: 1px solid var(--border);
+    padding: 32px 24px;
+    }
+
+    .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.2;
+    margin-bottom: 6px;
+    }
+
+    .role {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 24px;
+    }
+
+    .side-section {
+    margin-bottom: 24px;
+    }
+
+    .side-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+    }
+
+    .contact-list,
+    .skill-list,
+    .lang-list {
+    list-style: none;
+    font-size: 0.88rem;
+    }
+
+    .contact-list li {
+    margin-bottom: 8px;
+    color: var(--muted);
+    word-break: break-word;
+    }
+
+    .skill-list li {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    }
+
+    .lang-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.88rem;
+    }
+
+    .lang-level {
+    color: var(--muted);
+    font-size: 0.82rem;
+    }
+
+    .main {
+    padding: 32px 36px;
+    }
+
+    .section {
+    margin-bottom: 26px;
+    }
+
+    .section:last-child {
+    margin-bottom: 0;
+    }
+
+    .section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+    }
+
+    .profile-text {
+    font-size: 0.93rem;
+    color: var(--muted);
+    }
+
+    .item {
+    margin-bottom: 16px;
+    }
+
+    .item:last-child {
+    margin-bottom: 0;
+    }
+
+    .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+    }
+
+    .item-title {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--text);
+    }
+
+    .item-date {
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+    }
+
+    .item-subtitle {
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin-bottom: 6px;
+    }
+
+    .item-bullets {
+    padding-left: 18px;
+    font-size: 0.9rem;
+    color: var(--muted);
+    }
+
+    .item-bullets li {
+    margin-bottom: 4px;
+    }
+
+    @media (max-width: 720px) {
+      .cv {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .cv {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+      }
+    }
+    </style>
+</head>
+<body>
+  <div class="cv">
+    <aside class="sidebar">
+    
+        <h1 class="name">Davyd Ivanov</h1>
+
+      <div class="side-section">
+        <h2 class="side-title">falket14@gmail.com</h2>
+        <ul class="contact-list">
+          <li>📍 Mouscron/Belgique</li>
+          <li>📞 +32 478124093</li>
+          <li>✉️ falket14@gmail.com</li>
+          <li>🔗 https://github.com/falket22/cv-demo/li>
+        </ul>
+      </div>
+
+      <div class="side-section">
+        <h2 class="side-title">Compétences</h2>
+        <ul class="skill-list">
+          <li>HTML5 / CSS3 / AutoCad / Python </li>
+          <li>Communication client</li>
+          <li>Analyse de données</li>
+          <li>Suite Office / Notion</li>
+        </ul>
+      </div>
+
+      <div class="side-section">
+        <h2 class="side-title">Langues</h2>
+        <ul class="lang-list">
+          <li><span>Français</span> <span class="lang-level">Seuil (B1)</span></li>
+          <li><span>Anglais</span> <span class="lang-level">Intermédiaire (B2)</span></li>
+          <li><span>Russe</span> <span class="lang-level">Langue maternelle</span></li>
+          <li><span>Ukrainienne</span> <span class="lang-level">Langue maternelle</span></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="section">
+        <h2 class="section-title">Profil</h2>
+        <p class="profile-text">
+          Professionnel rigoureux et orienté résultats avec 2 ans d'expérience dans Webdesigner/Data Engineer.
+          Reconnu pour ma capacité à structurer des projets, collaborer avec des équipes pluridisciplinaires
+          et livrer des solutions fiables dans les délais. À la recherche d'un poste de Data & AI .
+        </p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Formation</h2>
+
+        <div class="item">
+          <div class="item-header">
+            <div class="item-title">Diplôme et grade de Bachelor (4 ans) avec spécialisation en ingénierie énergétique, électrophysique ou électromécanique.</div>
+            <div class="item-date">2021 – 2025</div>
+            
+          </div>
+          <div class="item-subtitle">NTU « Institut polytechnique de Kharkiv » v.Kharkiv</div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
